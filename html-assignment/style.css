@@ -1,0 +1,16 @@
+blockquote {
+    border-color: bisque;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 0px;
+    border-left-width: 8px;
+    padding: 6px;
+    padding-left: 16px;
+    font-size: 1.2em;
+    color: rgb(255, 210, 160); /* too lazy to convert to hex */;
+}
+
+a {
+    text-decoration: none;
+    font-size: .8em;
+}
