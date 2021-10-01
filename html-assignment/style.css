@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    max-width: 70%;
+}
+
 blockquote {
     border-color: bisque;
     border-style: solid;
@@ -10,7 +15,32 @@ blockquote {
     color: rgb(255, 210, 160); /* too lazy to convert to hex */;
 }
 
+header {
+    padding:15px;
+}
+
 a {
     text-decoration: none;
+}
+
+blockquote a {
     font-size: .8em;
+}
+
+article {
+    background-color: bisque;
+    padding: 15px;
+}
+hr {
+    background-color: bisque;
+}
+dt {
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer {
+    background-color: antiquewhite;
+    padding: 15px;
 }
