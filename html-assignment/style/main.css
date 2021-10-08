@@ -68,7 +68,8 @@ a {
 }
 
 a:hover {
-    color:plum
+    background-color:plum;
+    color: pink;
 }
 
 h1>a {
