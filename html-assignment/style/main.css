@@ -9,12 +9,40 @@ header {
     padding: 15px;
 }
 
+header>h1 {
+    float: left;
+    display: inline;
+}
+
+header>ul {
+    background: bisque;
+    text-decoration: none;
+    padding: 4px;
+    border: solid 1px #888;
+    border-radius: 4px;
+    display: inline;
+    list-style-type: none;
+    float: right;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+li>a {
+    background: none;
+    border: none;
+}
+li>a:hover {
+    background: none;
+    color: rgb(103, 93, 139);
+}
+
 body {
     margin: 15vh auto 10vh auto;
     max-width: 70%;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* I chose the font at random, but not bad, not bad... */
+    overflow: hidden;
 }
 
 .site-title {
@@ -91,7 +119,7 @@ ul {
     list-style: square;
 }
 
-li:nth-child(odd) {
+.hobbies li:nth-child(odd) {
     background-color: rgb(103, 93, 139);
 }
 
@@ -113,7 +141,7 @@ a {
 }
 
 a:hover {
-    background-color:plum;
+    background-color: plum;
     color: pink;
 }
 
