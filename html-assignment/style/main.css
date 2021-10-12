@@ -27,13 +27,17 @@ header>ul {
     margin-right: 60px;
 }
 
-li>a {
-    background: none;
+li a {
     border: none;
-}
-li>a:hover {
     background: none;
+}
+
+li>a:hover {
     color: rgb(103, 93, 139);
+}
+
+header>ul:hover {
+    background-color: plum;
 }
 
 body {
