@@ -1,4 +1,13 @@
-/* css messy as hell but thats for another day */
+/* CSS no longer messy */
+/* Basic Structure - Header, Body, Footer */
+header {
+    background-color: navajowhite;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+}
 
 body {
     margin: 15vh auto 10vh auto;
@@ -8,18 +17,30 @@ body {
     /* I chose the font at random, but not bad, not bad... */
 }
 
-header {
+.site-title {
+    color: rgb(103, 93, 139);
+}
+
+footer {
     background-color: navajowhite;
     width: 100%;
+    display: block;
     position: fixed;
-    top: 0;
     left: 0;
+    bottom: 0;
+    text-align: center;
 }
+
+/* ID's */
 
 #home {
     padding-left: 30px;
     background: none;
     border: none;
+}
+
+#my-image {
+    box-shadow: 2px 1px #000;
 }
 
 blockquote {
@@ -36,27 +57,51 @@ blockquote {
     ;
 }
 
-div.about {
+/* Articles and Content */
+
+.about {
     background-color: #222;
     color: white;
     height: 30vh
 }
 
-div.about-me {
+.about-me {
     color: white;
     margin: auto;
     max-width: 75%;
     float: left;
+    padding: 10px 30px;
 }
 
-div.about img {
+.about img {
     max-height: 30vh;
     float: left;
 }
 
-header {
+article {
+    background-color: bisque;
     padding: 15px;
 }
+
+hr {
+    background-color: bisque;
+}
+
+ul {
+    list-style: square;
+}
+
+li:nth-child(odd) {
+    background-color: rgb(103, 93, 139);
+}
+
+dt {
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Link Formatting */
 
 a {
     text-decoration: none;
@@ -82,49 +127,4 @@ h1>a {
 
 blockquote a {
     font-size: .8em;
-}
-
-article {
-    background-color: bisque;
-    padding: 15px;
-}
-
-hr {
-    background-color: bisque;
-}
-
-ul {
-    list-style: square;
-}
-
-li:nth-child(odd) {
-    background-color: rgb(103, 93, 139);
-}
-
-
-dt {
-    padding-top: 15px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-footer {
-    background-color: navajowhite;
-    width: 100%;
-    display: block;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
-
-#my-image {
-    box-shadow: 0 0 2 1 #000;
-}
-
-.site-title {
-    color: rgb(103, 93, 139);
-}
-
-footer p {
-    text-align: center;
 }
