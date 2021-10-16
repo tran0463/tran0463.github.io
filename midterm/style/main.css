@@ -11,7 +11,7 @@ body {
 /* Header and Nav bar */
 header {
     display: block;
-    background-image: url("../img/header.jpg");
+    background-image: url("../img/lone-starfish-wide.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@ h4 {
 }
 
 .art-img {
-    width: 360px;
+    width: 280px;
     display: block;
     float: left;
     margin: 0 30px 15px 0;
