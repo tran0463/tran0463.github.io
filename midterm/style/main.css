@@ -15,7 +15,6 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30vh;
     padding: 30px;
 }
 
@@ -54,12 +53,16 @@ header h1 {
 }
 
 /* util */
-.vll {
+.vll:not(:first-child) {
     float: left;
     border: solid black;
     border-width: 0px 0px 0px 1px;
     height: 3em;
-    margin-top: -15px;
+    margin-top: -16px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+    /* position: relative; */
+    /* top: -16px; */
 }
 
 /* Content */
@@ -153,8 +156,8 @@ form p {
 }
 
 footer {
-margin: 15px;
-padding: 15px;
-font-family: sans-serif;
-text-align: right;
+    margin: 15px;
+    padding: 15px;
+    font-family: sans-serif;
+    text-align: right;
 }
