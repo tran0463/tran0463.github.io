@@ -9,13 +9,17 @@ body {
 
 
 /* Header and Nav bar */
-header {
+header img{
     display: block;
-    background-image: url("../img/lone-starfish-wide.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 30px;
+    width: 100%;
+}
+
+.center {
+    display: block;
+    width: 71.5%;
+    height: 0;
+    position: absolute;
+    top: 10%;
 }
 
 header h1 {
