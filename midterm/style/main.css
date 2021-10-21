@@ -1,9 +1,11 @@
 html {
     background-color: #aad4cf;
+    margin: 0 15%;
 }
 
 body {
-    margin: 0% 15%;
+    /* margin: 0% 15%; */
+    margin: 0;
     background-color: #d4e9e7;
 }
 
@@ -16,17 +18,18 @@ header img{
 
 .center {
     display: block;
-    width: 71.5%;
+    float: left;
+    width: 100%;
+    position: relative;
+    left: 1%;
     height: 0;
-    position: absolute;
-    top: 10%;
+    top: -25vh;
 }
 
 header h1 {
     text-align: center;
     color: white;
     font-family: sans-serif;
-    padding-top: 12vh;
     font-size: 60pt;
     font-weight: lighter;
 }
@@ -34,7 +37,6 @@ header h1 {
 .nav ul {
     display: block;
     list-style: none;
-    text-align: justify;
 }
 
 .nav ul li {
@@ -42,6 +44,7 @@ header h1 {
     float: left;
     text-align: center;
     width: 33%;
+    list-style-type: none;
 }
 
 .nav ul li a {
@@ -49,11 +52,6 @@ header h1 {
     font-family: sans-serif;
     font-size: 24pt;
     color: #444;
-}
-
-.nav ul li {
-    float: left;
-    list-style: none;
 }
 
 /* util */
