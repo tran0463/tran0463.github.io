@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <img src="img/lone-starfish-wide.jpg" alt="Lone Starfish">
         <!-- I really do think using background-image in css would be so much better though -->
         <div class="center">
@@ -21,12 +21,12 @@
     <!-- I would use the nav tag, but the nav tag has no height so it would just be easier to use the div tag. -->
     <div class="nav">
         <ul>
-            <li class="vll"><a href="index.html">HOME</a></li>
-            <li class="vll"><a href="noins.html">STORY</a></li>
-            <li class="vll"><a href="noins.html">CONTACT</a></li>
+            <li class="vll"><a href="#home">HOME</a></li>
+            <li class="vll"><a href="#story">STORY</a></li>
+            <li class="vll"><a href="#contact">CONTACT</a></li>
         </ul>
     </div>
-    <article>
+    <article id="story">
         <br>
         <h2>Life of a Starfish</h2>
         <img class="art-img" src="img/lone-starfish.jpg" alt="Starfish">
@@ -64,7 +64,7 @@
                 nobis.</li>
         </ul>
     </article>
-    <article class="contact">
+    <article class="contact" id="contact">
         <h3>Contact to learn more</h3>
         <form action="contact" class="contactform">
             <label for="name">Your Name</label> <br>
