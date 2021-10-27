@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starfish</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lone Starfish</h1>
+    </header>
+
+    <!-- I would use the nav tag, but the nav tag has no height so it would just be easier to use the div tag. -->
+    <div class="nav">
+        <ul>
+            <li><a href="inxex.html">HOME</a></li>
+            <div class="vll"></div>
+            <li><a href="noins.html">STORY</a></li>
+            <div class="vll"></div>
+            <li><a href="noins.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <article>
+        <br>
+        <h2>Life of a Starfish</h2>
+        <!--          
+            <img src="" alt=""> 
+                paragraph wrapped around image
+                header about facts
+                list of facts
+             -->
+        <img class="art-img" src="img/header.jpg" alt="Starfish">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error placeat porro doloremque molestiae nostrum!
+            Ipsum ipsa asperiores placeat explicabo quo tempore deleniti maxime eum tenetur, quasi blanditiis ab
+            accusantium non voluptates amet libero nisi, molestiae unde labore deserunt vero veritatis necessitatibus
+            dignissimos adipisci. Facilis perferendis fuga porro nulla magnam natus consequatur praesentium corporis
+            ipsa cum, pariatur repellendus dolore, aliquam itaque error. Odio, hic! Itaque consequuntur veritatis
+            necessitatibus temporibus rerum fugiat laborum ad cum, fugit facere, ducimus omnis. Assumenda tenetur,
+            eligendi alias aspernatur modi debitis qui dolor? Repellat inventore molestiae aspernatur, ratione
+            consequuntur, ullam nobis vero, in labore culpa deleniti iste! Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Labore odit minima inventore veniam nisi nobis nostrum maiores, ea quam magni ex quia
+            accusantium similique saepe! Suscipit placeat dolorum, debitis sunt iusto nostrum repellendus aliquid iste
+            veritatis, facere veniam sequi deserunt! Minima architecto nihil id aliquam necessitatibus dolores
+            blanditiis delectus, beatae libero. Nulla non dolorem, sapiente magni earum veritatis vel recusandae
+            mollitia doloribus eveniet nesciunt, eum voluptates impedit itaque perferendis ad ratione unde error odio
+            repudiandae esse totam. Incidunt ab beatae maxime cum placeat aliquam. Sunt corrupti consequatur soluta
+            itaque error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, autem? Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veritatis, odio cum unde natus laborum quos.
+        </p>
+    </article>
+
+    <article>
+        <h3>Facts about Starfish</h3>
+        <ul>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam dolorem iste ab deleniti eaque
+                veritatis.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sapiente impedit maxime architecto
+                consequatur provident, ea voluptatem.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eius voluptas! Consectetur?</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias inventore ipsam officiis cum quos iusto
+                nobis.</li>
+        </ul>
+    </article>
+<article class="contact">
+        <h3>Contact to learn more</h3>
+        <form action="contact" class="contactform">
+            <label for="name">Your Name</label> <br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Your Email</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="msg">Your Message</label><br>
+            <input type="text" id="msg" name="msg"><br>
+            <h4>Would you like to visit the Starfish?</h4>
+            <p>Yes</p><input type="radio" class="radio">
+            <p>No</p><input type="radio" class="radio">
+            <p>Maybe</p><input type="radio" class="radio">
+            <br><br>
+            <input type="button" value="SEND" id="send" onclick="return error();">
+        </form>
+    </article>
+    <footer>
+        <p>&#169; Lone Starfish.</p>
+    </footer>
+</body>
+
+<script>
+    function error(){
+        alert('Did not learn PHP yet!')
+    }
+</script>
+
+</html>
