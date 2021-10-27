@@ -10,6 +10,7 @@ body {
 
 /* Header and Nav bar */
 header {
+    /* Doing it this way (using background-image instead of an img tag in html) makes it much more responsive. I couldn't find a way to make it responsive with the img tag */
     display: block;
     background-image: url("../img/lone-starfish-wide.jpg");
     background-position: center;
