@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,8 +53,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* set the defau;t style for buttons */
 button {
@@ -355,12 +354,6 @@ tr th {
 tr th, tr td {
     padding: 20px;
     border: solid 1px #222;
-}
-
-.hours {
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr); */
 }
 
 iframe {
