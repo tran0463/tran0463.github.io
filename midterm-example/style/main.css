@@ -156,8 +156,8 @@ form p {
 }
 
 footer {
-margin: 15px;
-padding: 15px;
-font-family: sans-serif;
-text-align: right;
+    margin: 15px;
+    padding: 15px;
+    font-family: sans-serif;
+    text-align: right;
 }
