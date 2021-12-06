@@ -53,24 +53,22 @@
         </div>
 
         <div class="about" id="about">
-            <div class="card">
-                <div class="aboutImg"></div>
-                <h2>About Us</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-                    totam quod? Fuga ipsam est vero consequatur velit ad animi ullam
-                    enim dolore explicabo, aperiam nulla dolorem quos impedit expedita
-                    aliquid esse? Tenetur quia reiciendis maiores praesentium atque ex
-                    molestias eligendi!
-                </p>
-                <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-                    mollitia cumque quo, explicabo vel quidem laudantium assumenda
-                    quisquam aliquid nihil, dolore rerum iste enim sequi voluptatem
-                    possimus eligendi, nisi quae.
-                </p>
-            </div>
+            <div class="aboutImg"></div>
+            <h2>About Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+                totam quod? Fuga ipsam est vero consequatur velit ad animi ullam
+                enim dolore explicabo, aperiam nulla dolorem quos impedit expedita
+                aliquid esse? Tenetur quia reiciendis maiores praesentium atque ex
+                molestias eligendi!
+            </p>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+                mollitia cumque quo, explicabo vel quidem laudantium assumenda
+                quisquam aliquid nihil, dolore rerum iste enim sequi voluptatem
+                possimus eligendi, nisi quae.
+            </p>
         </div>
         <section>
             <h2>Our Services</h2>
@@ -173,9 +171,11 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
                     adipisci, itaque vitae consequatur cumque pariatur quam quo? Labore
                     optio sequi quod reprehenderit porro nesciunt nisi recusandae. Omnis
+                    labore doloribus ab! Labore
+                    optio sequi quod reprehenderit porro nesciunt nisi recusandae. Omnis
                     labore doloribus ab!
                 </p>
-                <button class="blackButton" onclick="return error();">
+                <button class="transButton" onclick="return error();">
                     Learn More <i class="triangle"></i>
                 </button>
             </div>
@@ -185,7 +185,7 @@
             <h3>Our Team</h3>
             <div class="teamGrid">
                 <div class="teamCard">
-                    <img src="placeholder" alt="CEO of Three Star Media" class="ceo">
+                    <img src="img/john.jpg" alt="CEO of Three Star Media" class="ceo">
                     <h3>John Doe</h3>
                     <p><strong>CEO and Co-owner</strong></p>
                     <hr>
@@ -199,7 +199,7 @@
                 </div>
 
                 <div class="teamCard">
-                    <img src="placeholder" alt="CFO of Three Star Media" class="cfo">
+                    <img src="img/bob.jpg" alt="CFO of Three Star Media" class="cfo">
                     <h3>Bob Rite</h3>
                     <p><strong>CFO and Co-owner</strong></p>
                     <hr>
@@ -225,46 +225,45 @@
                     <input type="text" id="email" name="email"> <br>
                     <label for="message">Message</label> <br>
                     <input type="text" id="message" name="message"> <br>
-                    <input type="button" value="Send" id="sendButton">
+                    <input type="button" value="Send" id="sendButton" onclick="return error();">
                 </form>
                 <!-- display both side by side using grid -->
-                <div class="location">
-                    <h2>Location</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778950128877!2d-75.7549368!3d45.3499278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1638171273705!5m2!1sen!2sca" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                <div class="setting">
+                    <h2>Hours of operation</h2>
+                    <div class="hours">
+                        <table>
+                            <tr>
+                                <!-- text-align center -->
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+                            <tr>
+                                <!-- text-align left  -->
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="location">
+                        <h2>Location</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778950128877!2d-75.7549368!3d45.3499278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1638171273705!5m2!1sen!2sca" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Hours of operation</h2>
-            <div class="hours">
-                <table>
-                    <tr>
-                        <!-- text-align center -->
-                        <th>Days</th>
-                        <th>Hours</th>
-                    </tr>
-                    <tr>
-                        <!-- text-align left  -->
-                        <td>Monday - Friday</td>
-                        <td>9 AM - 6 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </table>
-
-                <footer>
-                    <p>
-                        &copy; Copyright Three Star Media, 2020
-                        <br>
-                        All images are taken from
-                        <em>Unsplash</em>
-                    </p>
-                </footer>
-            </div>
-        </section>
+        <footer>
+            <p>
+                &copy; Copyright Three Star Media, 2020
+                <br>
+                All images are taken from
+                <em>Unsplash</em>
+            </p>
+        </footer>
     </div>
 
     <script>
