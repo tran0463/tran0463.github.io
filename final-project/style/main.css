@@ -53,26 +53,15 @@ table {
     border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* set the defau;t style for buttons */
 button {
     background-color: transparent;
     border: none;
     margin: 0;
     padding: 0;
-    color: #c78c06;
     font-size: 1.5em;
-}
-
-button:nth-child(1) {
-    cursor: pointer;
-    background-color: #c78c06;
-    color: #222;
-    padding-top: 200px;
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: #c78c06;
-    color: #222;
 }
 
 /* 
@@ -84,17 +73,107 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 2%;
+    align-items: center;
 }
 
-.header button:nth-of-type(1n) {
+.current {
+    background-color: #c78c06;
+    color: black;
+}
+
+
+.header button {
+    cursor: pointer;
+    background-color: #222;
+    color: #c78c06;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #c78c06;
+    color: #222;
+}
+
+.header button {
     width: 100%;
     flex-basis: 2em;
-    padding: 2em;
+    padding: 1.2em;
+}
+
+.header button:nth-child(1) {
+    width: 100%;
+    padding: 1.2;
+    padding-top: 200px;
 }
 
 .logo {
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 144px;
+    max-height: 144px;
+    position: absolute;
+    left: 19px;
+    top: 19px;
+}
+
+#search {
+    border: none;
+    padding: 10px;
+    width: 840px;
+    font-size: 1.5em;
+}
+
+.intro .welcome {
+    background-image: url(/img/main-banner.jpg);
+    height: 700px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.container1 {
+    background-color: #00000080;
+    height: 80%;
+    color: #fff;
+    margin: 20% 0;
+    padding: 0 30px;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 80px 0 50px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    line-height: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.orangeButton {
+    margin-top: 20px;
+    display: flex;
+    background-color: #c78c06;
+    padding: 30px;
+}
+
+.triangle {
+    /* insert triangle icon/play button */
+}
+
+.card {}
+
+.aboutImg {
+    background-image: url(/img/about-us.jpg);
+    background-size: cover;
+    height: 444px;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0px;
 }
 
 

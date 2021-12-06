@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
-    <!-- <link rel="stylesheet" href="style/main.css" /> -->
+    <link rel="stylesheet" href="style/main.css">
 </head>
 
 <body>
     <div id="home">
         <div class="header">
-            <img class="logo" src="img/logo.png" alt="Three Star Media logo png" />
-            <button class="current navButton" onclick="window.location.href='#home'">Home</button>
+            <button class="current navButton" onclick="window.location.href='#home'"> <img class="logo" src="img/logo.png" alt="Three Star Media logo png">
+                Home</button>
             <button class="navButton" onclick="window.location.href=' #about'">About Us
             </button>
             <button class="navButton" onclick="window.location.href='#services'">Services
@@ -23,10 +23,10 @@
             <button class="navButton" onclick="window.location.href=' #contact'">Contact
             </button>
 
-            <form action="search">
-                <input type="text" name="search" id="search" value="Search" />
-                <input type="button" value=" " onclick="return error();" />
-                <i class="fa fa-search"></i>
+            <form action="GET" class="navSearch">
+                <input type="text" name="search" id="search" value="Search">
+                <input type="button" value=" " class="fa fa-search" onclick="return error();">
+                <!-- <i class="fa fa-search"></i> -->
                 <!-- fa is font awesome icon -->
             </form>
         </div>
@@ -63,7 +63,7 @@
                     aliquid esse? Tenetur quia reiciendis maiores praesentium atque ex
                     molestias eligendi!
                 </p>
-                <br />
+                <br>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
                     mollitia cumque quo, explicabo vel quidem laudantium assumenda
@@ -185,10 +185,10 @@
             <h3>Our Team</h3>
             <div class="teamGrid">
                 <div class="teamCard">
-                    <img src="placeholder" alt="CEO of Three Star Media" class="ceo" />
+                    <img src="placeholder" alt="CEO of Three Star Media" class="ceo">
                     <h3>John Doe</h3>
                     <p><strong>CEO and Co-owner</strong></p>
-                    <hr />
+                    <hr>
                     <!-- hr to be styled -->
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -199,10 +199,10 @@
                 </div>
 
                 <div class="teamCard">
-                    <img src="placeholder" alt="CFO of Three Star Media" class="cfo" />
+                    <img src="placeholder" alt="CFO of Three Star Media" class="cfo">
                     <h3>Bob Rite</h3>
                     <p><strong>CFO and Co-owner</strong></p>
-                    <hr />
+                    <hr>
                     <!-- hr to be styled -->
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -219,13 +219,13 @@
             <div class="contactGrid" id="contact">
                 <h3>Send us a message</h3>
                 <form action="contact">
-                    <label for="name">Full Name</label> <br />
-                    <input type="text" id="name" name="name" /> <br />
-                    <label for="email">Email</label> <br />
-                    <input type="text" id="email" name="email" /> <br />
-                    <label for="message">Message</label> <br />
-                    <input type="text" id="message" name="message" /> <br />
-                    <input type="button" value="Send" id="sendButton" />
+                    <label for="name">Full Name</label> <br>
+                    <input type="text" id="name" name="name"> <br>
+                    <label for="email">Email</label> <br>
+                    <input type="text" id="email" name="email"> <br>
+                    <label for="message">Message</label> <br>
+                    <input type="text" id="message" name="message"> <br>
+                    <input type="button" value="Send" id="sendButton">
                 </form>
                 <!-- display both side by side using grid -->
                 <div class="location">
@@ -258,7 +258,7 @@
                 <footer>
                     <p>
                         &copy; Copyright Three Star Media, 2020
-                        <br />
+                        <br>
                         All images are taken from
                         <em>Unsplash</em>
                     </p>
