@@ -67,6 +67,10 @@ button {
                 Mobile Style
 */
 
+html {
+    overflow-x: hidden;
+}
+
 /* nav bar */
 
 .header {
@@ -126,6 +130,7 @@ button:hover {
 
 .intro .welcome {
     background-image: url(/img/main-banner.jpg);
+    overflow: hidden;
     height: 700px;
     background-position: center;
     display: flex;
@@ -134,10 +139,11 @@ button:hover {
 
 .container1 {
     background-color: #00000080;
-    height: 80%;
     color: #fff;
     margin: 20% 0;
-    padding: 0 30px;
+    padding: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .about {
@@ -179,7 +185,7 @@ h1 {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.6em;
-    margin: 80px 0 50px 0;
+    margin: 80px 0 35px 0;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -190,7 +196,7 @@ p {
 }
 
 .card p, .about p {
-    margin-left: 15px;
+    margin: 0 15px 0 15px;
 }
 
 h2 {
@@ -259,6 +265,7 @@ hr {
     display: flex;
     background-color: #c78c06;
     padding: 30px;
+    width: 280px;
 }
 
 .blackButton {
