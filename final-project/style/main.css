@@ -23,6 +23,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    text-decoration: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -33,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ol, ul {
@@ -63,6 +65,10 @@ button {
     font-size: 1.5em;
 }
 
+.navButton a {
+    color: #c78c06
+}
+
 /* 
                 Mobile Style
 */
@@ -81,9 +87,12 @@ html {
     align-items: center;
 }
 
-.current {
+#current {
     background-color: #c78c06;
-    color: black;
+}
+
+#current a {
+    color: #222;
 }
 
 
@@ -93,11 +102,14 @@ html {
     color: #c78c06;
 }
 
-button:hover {
-    cursor: pointer;
-    background-color: #c78c06;
+button:hover a {
     color: #222;
 }
+
+button:hover {
+    background-color: #c78c06;
+}
+
 
 .header button {
     width: 100%;
@@ -164,6 +176,7 @@ button:hover {
 }
 
 footer {
+    margin-top: 15px;
     background-color: #222;
     color: #c78c06;
     height: 100px;
@@ -186,12 +199,10 @@ h1 {
     font-weight: 700;
     line-height: 1.6em;
     margin: 80px 0 35px 0;
-    font-family: 'Open Sans', sans-serif;
 }
 
 p {
     line-height: 1.5rem;
-    font-family: 'Open Sans', sans-serif;
     padding-bottom: 15px;
 }
 
@@ -201,7 +212,6 @@ p {
 
 h2 {
     font-size: 3rem;
-    font-family: 'Open Sans', sans-serif;
     margin: 40px 0 15px 15px;
     font-weight: 600;
 }
@@ -212,7 +222,6 @@ h2 {
 
 h3 {
     font-size: 2.5rem;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     margin: 40px 0 20px 15px;
 }
@@ -340,6 +349,10 @@ hr {
     margin: 20px 0 10px 15px;
 }
 
+.teamCard p {
+    margin: 0 0 0 15px;
+}
+
 /* form */
 
 label {
@@ -396,48 +409,37 @@ iframe {
 
 @media only screen and (min-width: 760px) {
 
-    /* Page container styling */
-    body {
-        width: 100%;
+    main {
+        max-width: 1200px;
+        margin: auto;
     }
 
-    /* Text styling */
+    .header {
+        background-color: #222;
+        height: 100px;
+        flex-direction: row;
+        padding: 0;
+        justify-content: center;
+        flex-grow: 0;
 
-    h1 {
-        font-size: 6rem;
-        font-family: sans-serif;
-        color: #fff;
     }
 
-    h2 {
-        font-size: 4rem;
-        font-family: sans-serif;
-        color: #000;
+    .navButton {
+        padding: 20px 40px;
     }
 
-    p {
-        font-size: 1.4rem;
-        line-height: 1.5rem;
+    #search {
+        width: 250px;
     }
 
-    header {
-        color: #444;
-        width: 100%;
+    #current {
+        padding: 20px 40px;
     }
 
-    .current {
-        color: rgb(207, 135, 0);
-    }
-
-    .current a {
-        color: #444;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-    }
-
-    header .welcome {
-        background-image: ;
+    .logo {
+        position: absolute;
+        height: 80px;
+        top: 10px;
+        left: 375px;
     }
 }
