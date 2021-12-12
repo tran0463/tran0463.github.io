@@ -34,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 ol, ul {
@@ -213,7 +213,7 @@ p {
 h2 {
     font-size: 3rem;
     margin: 40px 0 15px 15px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .setting h2 {
@@ -426,6 +426,7 @@ iframe {
     .navButton {
         padding: 15px 30px;
         color: #c78c06;
+        flex-shrink: 0;
     }
 
     .navButton:hover {
@@ -503,16 +504,46 @@ iframe {
 
     #services {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 200px 200px;
+        gap: 15px;
     }
 
     .cardImg {
         height: 400px;
     }
 
-    .servicegrid:nth-child(1) {
-        grid-row: 1 / 2;
-        grid-column: 1 / 5;
+    .card {
+        margin: auto;
+    }
+
+    .card:nth-child(1) {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+    }
+
+    .card:nth-child(2) {
+        grid-column: 4 / span 3;
+        grid-row: 1 / span 1;
+    }
+
+    .card:nth-child(3) {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+        visibility: hidden;
+    }
+
+    .card:nth-child(4) {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+        visibility: hidden;
+
+    }
+
+    .card:nth-child(5) {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+        visibility: hidden;
+
     }
 }
