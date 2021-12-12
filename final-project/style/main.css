@@ -150,7 +150,7 @@ button:hover {
 }
 
 .container1 {
-    background-color: #00000080;
+    background-color: #000000a0;
     color: #fff;
     margin: 20% 0;
     padding: 0 30px 30px 30px;
@@ -418,28 +418,101 @@ iframe {
         background-color: #222;
         height: 100px;
         flex-direction: row;
-        padding: 0;
-        justify-content: center;
-        flex-grow: 0;
+        padding: 0 17vw;
+        justify-content: space-evenly;
 
     }
 
     .navButton {
-        padding: 20px 40px;
+        padding: 15px 30px;
+        color: #c78c06;
+    }
+
+    .navButton:hover {
+        padding: 15px 30px;
+        color: #222;
+        background-color: #c78c06;
+    }
+
+    #current {
+        color: #222;
+        background-color: #c78c06;
+    }
+
+    .logo {
+        height: 60px;
+        position: initial;
+        margin: 0 40px 0 0px;
     }
 
     #search {
         width: 250px;
     }
 
-    #current {
-        padding: 20px 40px;
+    .welcome {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        margin-left: -50vw;
+        /* such an odd way of expanding something past max width of it's container */
+        background-size: cover;
+        display: flex;
+        justify-content: center;
     }
 
-    .logo {
-        position: absolute;
-        height: 80px;
-        top: 10px;
-        left: 375px;
+    .container1 {
+        max-width: 1200px;
+        padding: 15px;
+    }
+
+    .container1 h1 {
+        font-weight: 700;
+        font-size: 6rem;
+        margin-top: 40px;
+        line-height: 1.4em;
+    }
+
+    .about {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        margin-left: -50vw;
+    }
+
+    .max {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+    }
+
+    .aboutImg {
+        width: 50%;
+        height: 310px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .about .content {
+        width: 50%;
+    }
+
+    .about .content h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    #services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+    }
+
+    .cardImg {
+        height: 400px;
+    }
+
+    .servicegrid:nth-child(1) {
+        grid-row: 1 / 2;
+        grid-column: 1 / 5;
     }
 }
