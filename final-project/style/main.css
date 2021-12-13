@@ -507,6 +507,7 @@ iframe {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 200px 200px;
         gap: 15px;
+        margin: 15px;
     }
 
     .cardImg {
