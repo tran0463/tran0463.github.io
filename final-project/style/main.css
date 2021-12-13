@@ -225,6 +225,10 @@ hr {
     margin: 0
 }
 
+.orangeButton:hover, .blackButton:hover, .transButton:hover, #sendButton:hover {
+    cursor: pointer;
+}
+
 .orangeButton {
     display: flex;
     background-color: #c78c06;
@@ -238,6 +242,10 @@ hr {
     color: #fff;
     padding: 30px;
     margin: 0 0 0 15px
+}
+
+.blackButton:hover {
+    color: #c78c06
 }
 
 .transButton {
