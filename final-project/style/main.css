@@ -1,56 +1,27 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+a, article, b, body, center, div, em, embed, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, label, p, s, section, strong, table, td, th, tr, video {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    text-decoration: none
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article, footer, header, section {
+    display: block
 }
 
 body {
     line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+    font-family: 'Open Sans', Helvetica, sans-serif
 }
 
 table {
     border-collapse: collapse;
-    border-spacing: 0;
+    border-spacing: 0
 }
 
 button {
@@ -58,94 +29,600 @@ button {
     border: none;
     margin: 0;
     padding: 0;
-    color: #c78c06;
-    font-size: 1.5em;
+    font-size: 1.5em
 }
 
-button:nth-child(1) {
-    cursor: pointer;
-    background-color: #c78c06;
-    color: #222;
-    padding-top: 200px;
+.navButton a {
+    color: #c78c06
 }
 
-button:hover {
-    cursor: pointer;
-    background-color: #c78c06;
-    color: #222;
+html {
+    overflow-x: hidden
 }
-
-/* 
-                Mobile Style
-*/
 
 .header {
     background-color: #222;
     display: flex;
     flex-direction: column;
     padding: 2%;
+    align-items: center
 }
 
-.header button:nth-of-type(1n) {
+#current {
+    background-color: #c78c06
+}
+
+#current a {
+    color: #222
+}
+
+.header button {
+    cursor: pointer;
+    background-color: #222;
+    color: #c78c06
+}
+
+button:hover a {
+    color: #222
+}
+
+button:hover {
+    background-color: #c78c06
+}
+
+.header button {
     width: 100%;
     flex-basis: 2em;
-    padding: 2em;
+    padding: 1.2em
+}
+
+.header button:nth-child(1) {
+    width: 100%;
+    padding-top: 200px
 }
 
 .logo {
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 144px;
+    max-height: 144px;
+    position: absolute;
+    left: 19px;
+    top: 19px
 }
 
+#search {
+    border: none;
+    margin: auto;
+    padding: 10px;
+    width: calc(90vw - 30px);
+    font-size: 1.5em
+}
 
-/* 
-                Desktop Style
- */
+.intro .welcome {
+    background-image: url("../img/main-banner.jpg");
+    overflow: hidden;
+    height: 700px;
+    background-position: center;
+    display: flex;
+    align-items: center
+}
 
-@media only screen and (max-width: 760px) {
+.container1 {
+    background-color: #000000a0;
+    color: #fff;
+    margin: 20% 0;
+    padding: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column
+}
 
-    /* Page container styling */
-    body {
-        width: 100%;
+.about {
+    background-color: #ffe6ac;
+    padding: 5px 0 20px 0
+}
+
+.card {
+    background-color: #ffe6ac;
+    margin: 15px 15px;
+    padding-bottom: 15px
+}
+
+.card h3 {
+    font-weight: 700;
+}
+
+.teamCard {
+    margin: 15px;
+    padding-bottom: 20px;
+    background-color: #ffe6ac
+}
+
+footer {
+    margin-top: 15px;
+    background-color: #222;
+    color: #c78c06;
+    height: 100px
+}
+
+footer p {
+    line-height: 2rem;
+    padding: 25px 0 0 15px;
+    margin: 0
+}
+
+em {
+    text-decoration: underline
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.6em;
+    margin: 80px 0 35px 0
+}
+
+p {
+    line-height: 1.5rem;
+    padding-bottom: 15px
+}
+
+.about p, .card p {
+    margin: 0 15px 0 15px
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 40px 0 15px 15px;
+    font-weight: 700
+}
+
+.setting h2 {
+    margin: 30px 0 15px 15px
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 40px 0 20px 15px
+}
+
+strong {
+    font-weight: 700
+}
+
+hr {
+    color: #c78c06;
+    width: calc(100% - 30px);
+    height: 3px;
+    background-color: #c78c06;
+    border: none;
+    margin: -15px 0 15px 15px
+}
+
+.triangle {
+    padding: 0 0 0 20px;
+    position: relative;
+    top: -3px
+}
+
+.inv {
+    color: #fff
+}
+
+#searchButton {
+    border: 1px solid #c78c06;
+    width: 49px;
+    height: 49px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.header form {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0
+}
+
+.orangeButton:hover, .blackButton:hover, .transButton:hover, #sendButton:hover {
+    cursor: pointer;
+}
+
+.orangeButton {
+    display: flex;
+    background-color: #c78c06;
+    padding: 30px;
+    width: 280px
+}
+
+.blackButton {
+    background-color: #222;
+    display: inline-block;
+    color: #fff;
+    padding: 30px;
+    margin: 0 0 0 15px
+}
+
+.blackButton:hover {
+    color: #c78c06
+}
+
+.transButton {
+    display: flex;
+    background-color: #22222280;
+    color: #fff;
+    padding: 30px;
+    margin: 0;
+    border: 1px solid #c78c06
+}
+
+.aboutImg {
+    background-image: url("../img/about-us.jpg");
+    background-size: cover;
+    height: 444px;
+    margin: 15px 15px 15px 0
+}
+
+.digiImg {
+    background-image: url("../img/digital.jpg");
+    background-size: cover;
+    background-position: center;
+
+    height: 600px
+}
+
+.markImg {
+    background-image: url("../img/marketing.jpg");
+    background-size: cover;
+    background-position: center;
+
+    height: 600px
+}
+
+.videImg {
+    background-image: url("../img/video.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px
+}
+
+.webdImg {
+    background-image: url("../img/web.jpg");
+    background-size: cover;
+    background-position: center;
+
+    height: 600px
+}
+
+.prinImg {
+    background-image: url("../img/print.jpg");
+    background-size: cover;
+    background-position: center;
+
+    height: 600px
+}
+
+.visi {
+    background-image: url("../img/vision.jpg");
+    background-repeat: no-repeat;
+    background-size: 942px 550px;
+    background-position: 55% 50%;
+    padding: 20px 15px
+}
+
+.visi h3 {
+    margin-left: 0
+}
+
+.ceo, .cfo {
+    width: 100%
+}
+
+.teamCard h3 {
+    margin: 20px 0 10px 15px
+}
+
+.teamCard p {
+    margin: 0 0 0 15px
+}
+
+label {
+    font-family: "Open Sans", sans-serif;
+    margin: 15px 0 0 15px
+}
+
+input {
+    margin: 5px 0 10px 15px;
+    width: calc(100% - 45px);
+    padding: 5px
+}
+
+form textarea {
+    margin: 5px 0 15px 15px;
+    width: calc(100% - 45px);
+    height: 120px;
+    padding: 5px
+}
+
+#sendButton {
+    background-color: #222;
+    color: #c78c06;
+    width: auto;
+    border: none;
+    font-size: 1.5rem;
+    padding: 5px
+}
+
+table {
+    border: solid 1px #222;
+    margin: 15px;
+    width: calc(100% - 30px);
+    font-family: "Open Sans", sans-serif
+}
+
+tr th {
+    background-color: #ffe6ac
+}
+
+tr td, tr th {
+    padding: 20px;
+    border: solid 1px #222
+}
+
+iframe {
+    width: calc(100% - 30px);
+    margin: 0 15px 0 15px
+}
+
+@media only screen and (min-width:760px) {
+    main {
+        max-width: 1200px;
+        margin: auto
     }
 
-    /* Text styling */
-
-    h1 {
-        font-size: 6rem;
-        font-family: sans-serif;
-        color: #fff;
+    .header {
+        background-color: #222;
+        height: 100px;
+        flex-direction: row;
+        padding: 0 17vw;
+        justify-content: space-evenly
     }
 
     h2 {
-        font-size: 4rem;
-        font-family: sans-serif;
-        color: #000;
+        margin-left: 0;
     }
 
-    p {
-        font-size: 1.4rem;
-        line-height: 1.5rem;
+    .max {
+        margin-left: 0
     }
 
-    header {
-        color: #444;
-        width: 100%;
+    .max p {
+        margin-left: 0
     }
 
-    .current {
-        color: rgb(207, 135, 0);
+    .navButton {
+        padding: 15px 30px;
+        color: #c78c06;
+        flex-shrink: 0
     }
 
-    .current a {
-        color: #444;
+    .navButton:hover {
+        padding: 15px 30px;
+        color: #222;
+        background-color: #c78c06
     }
 
-    nav ul li a {
-        text-decoration: none;
+    #current {
+        color: #222;
+        background-color: #c78c06
     }
 
-    header .welcome {
-        background-image: ;
+    .logo {
+        height: 60px;
+        position: initial;
+        margin: 0 40px 0 0
+    }
+
+    #search {
+        width: 250px
+    }
+
+    .welcome {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        margin-left: -50vw;
+        background-size: cover;
+        display: flex;
+        justify-content: center
+    }
+
+    .container1 {
+        max-width: 1200px;
+        padding: 15px
+    }
+
+    .container1 h1 {
+        font-weight: 700;
+        font-size: 6rem;
+        margin-top: 40px;
+        line-height: 1.4em
+    }
+
+    .about {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        margin-left: -50vw;
+        padding-bottom: 5px
+    }
+
+    .max {
+        max-width: 1200px;
+        margin: auto;
+        display: flex
+    }
+
+    .aboutImg {
+        width: 50%;
+        height: 310px;
+        background-position: center;
+        background-size: cover
+    }
+
+    .about .content {
+        width: 50%
+    }
+
+    .about .content h1 {
+        margin: 0;
+        padding: 0
+    }
+
+    #services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: 30px;
+        gap: 15px
+    }
+
+    .cardImg {
+        height: 400px
+    }
+
+    .card:nth-child(3) .cardImg, .card:nth-child(4) .cardImg, .card:nth-child(5) .cardImg {
+        height: 250px
+    }
+
+    .card {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card:nth-child(1) {
+        grid-column: 1/span 3;
+        grid-row: 1/span 1;
+    }
+
+    .card:nth-child(2) {
+        grid-column: 4/span 3;
+        grid-row: 1/span 1;
+    }
+
+    .card:nth-child(3) {
+        grid-column: 1/span 2;
+        grid-row: 2/span 1;
+        padding-bottom: 15px;
+    }
+
+    .card:nth-child(4) {
+        grid-column: 3/span 2;
+        grid-row: 2/span 1;
+        padding-bottom: 15px;
+    }
+
+    .card:nth-child(5) {
+        grid-column: 5/span 2;
+        grid-row: 2/span 1;
+        padding-bottom: 15px;
+    }
+
+    .blackButton {
+        margin: 0 15px;
+        display: flex;
+        justify-content: center
+    }
+
+    .visi {
+        background-size: cover;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        margin-left: -50vw
+    }
+
+    .visi article {
+        max-width: 1200px;
+        margin: auto
+    }
+
+    .visi article>* {
+        margin: 0
+    }
+
+    .visi h3 {
+        padding: 30px 0 20px 0
+    }
+
+    .teamGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr)
+    }
+
+    #team>h3 {
+        margin-left: 0
+    }
+
+    .teamCard:nth-child(1) {
+        grid-row: 1/2;
+        grid-column: 1/3;
+        display: flex;
+        margin: 0;
+        padding-bottom: 0
+    }
+
+    .teamCard:nth-child(2) {
+        grid-row: 2/3;
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0;
+        padding-bottom: 0
+    }
+
+    .ceo {
+        width: inherit;
+        margin: 0;
+        padding: 0
+    }
+
+    .cfo {
+        width: inherit
+    }
+
+    .contact * {
+        margin-left: 0
+    }
+
+    .contactGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr
+    }
+
+    .contactForm {
+        grid-column: 1
+    }
+
+    .location {
+        grid-column: 2
+    }
+
+    .setting {
+        grid-row: 2;
+        grid-column: 1/3
+    }
+
+    .setting h2 {
+        margin: 0;
+    }
+
+    footer p {
+        max-width: 1200px;
+        margin: auto
     }
 }
