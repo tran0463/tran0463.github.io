@@ -49,31 +49,29 @@ html {
 }
 
 #current {
-    background-color: #c78c06
+    background-color: #c78c06;
+    color: #222;
+    padding-top: 200px
 }
 
-#current a {
-    color: #222
-}
-
-.header button {
+.navButton {
     cursor: pointer;
     background-color: #222;
-    color: #c78c06
+    color: #c78c06;
+    padding: 20px 100%;
+    width: 100px;
+    text-align: center
 }
 
-button:hover a {
-    color: #222
-}
-
-button:hover {
-    background-color: #c78c06
+.navButton:hover {
+    color: #222;
+    background-color: #c78c06;
 }
 
 .header button {
     width: 100%;
     flex-basis: 2em;
-    padding: 1.2em
+    padding: 1.2em;
 }
 
 .header button:nth-child(1) {
