@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 a, article, b, body, center, div, em, embed, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, label, p, s, section, strong, table, td, th, tr, video {
     margin: 0;
@@ -126,6 +126,10 @@ button:hover {
     padding-bottom: 15px
 }
 
+.card h3 {
+    font-weight: 700;
+}
+
 .teamCard {
     margin: 15px;
     padding-bottom: 20px;
@@ -176,7 +180,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin: 40px 0 20px 15px
 }
@@ -378,7 +382,7 @@ iframe {
     }
 
     h2 {
-        margin-left: 0
+        margin-left: 0;
     }
 
     .max {
