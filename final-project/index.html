@@ -83,36 +83,40 @@
                         <div class="digiImg cardImg"></div>
                         <!-- insert background-img -->
                         <div>
-                            <h3>Digital Transformation</h3>
+                            <article>
+                                <h3>Digital Transformation</h3>
 
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                                repellendus asperiores exercitationem repudiandae veniam
-                                praesentium nisi ducimus enim illum animi explicabo, quo odit.
-                                Molestias corrupti minima praesentium eius, blanditiis quasi?
-                            </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                                    repellendus asperiores exercitationem repudiandae veniam
+                                    praesentium nisi ducimus enim illum animi explicabo, quo odit.
+                                    Molestias corrupti minima praesentium eius, blanditiis quasi?
+                                </p>
 
-                            <button class="blackButton" onclick="return error();">
-                                Digital Plans <i class="triangle">&#9654;</i>
-                            </button>
+                                <a class="blackButton" onclick="return error();">
+                                    Digital Plans <i class="triangle">&#9654;</i>
+                                </a>
+                            </article>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="markImg cardImg"></div>
                         <div>
-                            <h3>Marketing</h3>
+                            <article>
+                                <h3>Marketing</h3>
 
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                                repellendus asperiores exercitationem repudiandae veniam
-                                praesentium nisi ducimus enim illum animi explicabo, quo odit.
-                                Molestias corrupti minima praesentium eius, blanditiis quasi?
-                            </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                                    repellendus asperiores exercitationem repudiandae veniam
+                                    praesentium nisi ducimus enim illum animi explicabo, quo odit.
+                                    Molestias corrupti minima praesentium eius, blanditiis quasi?
+                                </p>
 
-                            <button class="blackButton" onclick="return error();">
-                                Marketing Plans <i class="triangle">&#9654;</i>
-                            </button>
+                                <a class="blackButton" onclick="return error();">
+                                    Marketing Plans <i class="triangle">&#9654;</i>
+                                </a>
+                            </article>
                         </div>
                     </div>
 
@@ -127,9 +131,9 @@
                                     beatae ipsam nemo ad error eum corporis voluptatum asperiores.
                                     Laborum facere possimus error vel?
                                 </p>
-                                <button class="blackButton" onclick="return error();">
+                                <a class="blackButton" onclick="return error();">
                                     Video Plans <i class="triangle">&#9654;</i>
-                                </button>
+                                </a>
                             </article>
                         </div>
                     </div>
@@ -145,9 +149,9 @@
                                     beatae ipsam nemo ad error eum corporis voluptatum asperiores.
                                     Laborum facere possimus error vel?
                                 </p>
-                                <button class="blackButton" onclick="return error();">
+                                <a class="blackButton" onclick="return error();">
                                     Web Plans <i class="triangle">&#9654;</i>
-                                </button>
+                                </a>
                             </article>
                         </div>
                     </div>
@@ -163,9 +167,9 @@
                                     beatae ipsam nemo ad error eum corporis voluptatum asperiores.
                                     Laborum facere possimus error vel?
                                 </p>
-                                <button class="blackButton" onclick="return error();">
+                                <a class="blackButton" onclick="return error();">
                                     Print Plans <i class="triangle">&#9654;</i>
-                                </button>
+                                </a>
                             </article>
                         </div>
                     </div>
@@ -183,9 +187,9 @@
                             optio sequi quod reprehenderit porro nesciunt nisi recusandae. Omnis
                             labore doloribus ab!
                         </p>
-                        <button class="transButton" onclick="return error();">
+                        <a class="transButton" onclick="return error();">
                             Learn More <i class="triangle">&#9654;</i>
-                        </button>
+                        </a>
                     </article>
                 </div>
             </section>
@@ -211,35 +215,39 @@
 
                         <div class="teamCard">
                             <img src="img/bob.jpg" alt="CFO of Three Star Media" class="cfo">
-                            <h3>Bob Rite</h3>
-                            <p><strong>CFO and Co-owner</strong></p>
-                            <hr>
-                            <!-- hr to be styled -->
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Veritatis ad nostrum repellat, excepturi harum omnis inventore
-                                sunt debitis explicabo provident commodi, ipsa maxime assumenda
-                                illum vero tempora hic dicta? Error.
-                            </p>
+                            <div>
+                                <h3>Bob Rite</h3>
+                                <p><strong>CFO and Co-owner</strong></p>
+                                <hr>
+                                <!-- hr to be styled -->
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Veritatis ad nostrum repellat, excepturi harum omnis inventore
+                                    sunt debitis explicabo provident commodi, ipsa maxime assumenda
+                                    illum vero tempora hic dicta? Error.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </article>
             </section>
 
             <section>
-                <article>
+                <article class="contact">
                     <h2>Contact Us</h2>
                     <div class="contactGrid" id="contact">
-                        <h3>Send us a message</h3>
-                        <form action="contact">
-                            <label for="name">Full Name</label> <br>
-                            <input type="text" id="name" name="name"> <br>
-                            <label for="email">Email</label> <br>
-                            <input type="text" id="email" name="email"> <br>
-                            <label for="message">Message</label> <br>
-                            <input type="text" id="message" name="message"> <br>
-                            <input type="button" value="Send" id="sendButton" onclick="return error();">
-                        </form>
+                        <div class="form">
+                            <h3>Send us a message</h3>
+                            <form action="contactForm">
+                                <label for="name">Full Name</label> <br>
+                                <input type="text" id="name" name="name"> <br>
+                                <label for="email">Email</label> <br>
+                                <input type="text" id="email" name="email"> <br>
+                                <label for="message">Message</label> <br>
+                                <textarea id="message" name="message"></textarea><br>
+                                <input type="button" value="Send" id="sendButton" onclick="return error();">
+                            </form>
+                        </div>
                         <!-- display both side by side using grid -->
                         <div class="setting">
                             <h2>Hours of operation</h2>
@@ -261,10 +269,10 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="location">
-                                <h2>Location</h2>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778950128877!2d-75.7549368!3d45.3499278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1638171273705!5m2!1sen!2sca" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
-                            </div>
+                        </div>
+                        <div class="location">
+                            <h3>Location</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778950128877!2d-75.7549368!3d45.3499278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1638171273705!5m2!1sen!2sca" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </article>
