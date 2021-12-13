@@ -278,8 +278,8 @@ hr {
 }
 
 .blackButton {
-    display: flex;
     background-color: #222;
+    display: inline-block;
     color: white;
     padding: 30px;
     margin: 0 0 0 15px;
@@ -290,7 +290,7 @@ hr {
     background-color: #22222280;
     color: white;
     padding: 30px;
-    margin: 0 0 0 15px;
+    margin: 0;
     border: 1px solid #c78c06;
 }
 
@@ -338,7 +338,11 @@ hr {
     background-repeat: no-repeat;
     background-size: 942px 550px;
     background-position: 55% 50%;
-    padding: 20px 0;
+    padding: 20px 15px;
+}
+
+.visi h3 {
+    margin-left: 0;
 }
 
 .ceo, .cfo {
@@ -586,11 +590,6 @@ iframe {
 
     .visi h3 {
         padding: 30px 0 20px 0;
-    }
-
-    .transButton {
-        display: block;
-        width: 130px;
     }
 
     .teamGrid {
