@@ -98,7 +98,7 @@ button:hover {
 }
 
 .intro .welcome {
-    background-image: url(/img/main-banner.jpg);
+    background-image: url(img/main-banner.jpg);
     overflow: hidden;
     height: 700px;
     background-position: center;
@@ -246,14 +246,14 @@ hr {
 }
 
 .aboutImg {
-    background-image: url(/img/about-us.jpg);
+    background-image: url(img/about-us.jpg);
     background-size: cover;
     height: 444px;
     margin: 15px 15px 15px 0
 }
 
 .digiImg {
-    background-image: url(/img/digital.jpg);
+    background-image: url(img/digital.jpg);
     background-size: cover;
     background-position: center;
 
@@ -261,7 +261,7 @@ hr {
 }
 
 .markImg {
-    background-image: url(/img/marketing.jpg);
+    background-image: url(img/marketing.jpg);
     background-size: cover;
     background-position: center;
 
@@ -269,14 +269,14 @@ hr {
 }
 
 .videImg {
-    background-image: url(/img/video.jpg);
+    background-image: url(img/video.jpg);
     background-size: cover;
     background-position: center;
     height: 600px
 }
 
 .webdImg {
-    background-image: url(/img/web.jpg);
+    background-image: url(img/web.jpg);
     background-size: cover;
     background-position: center;
 
@@ -284,7 +284,7 @@ hr {
 }
 
 .prinImg {
-    background-image: url(/img/print.jpg);
+    background-image: url(img/print.jpg);
     background-size: cover;
     background-position: center;
 
@@ -292,7 +292,7 @@ hr {
 }
 
 .visi {
-    background-image: url(/img/vision.jpg);
+    background-image: url(img/vision.jpg);
     background-repeat: no-repeat;
     background-size: 942px 550px;
     background-position: 55% 50%;
