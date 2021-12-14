@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-a, article, b, body, center, div, em, embed, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, label, p, s, section, strong, table, td, th, tr, video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
     margin: 0;
     padding: 0;
     border: 0;
@@ -32,7 +49,7 @@ button {
     font-size: 1.5em
 }
 
-.navButton a {
+.navButton {
     color: #c78c06
 }
 
@@ -49,25 +66,24 @@ html {
 }
 
 #current {
-    background-color: #c78c06
+    background-color: #c78c06;
+    color: #222;
+    padding-top: 200px
 }
 
-#current a {
-    color: #222
-}
-
-.header button {
+.navButton {
     cursor: pointer;
     background-color: #222;
-    color: #c78c06
+    color: #c78c06;
+    padding: 20px 100%;
+    width: 100px;
+    text-align: center
 }
 
-button:hover a {
-    color: #222
-}
+.navButton:hover {
+    color: #222;
+    background-color: #c78c06;
 
-button:hover {
-    background-color: #c78c06
 }
 
 .header button {
@@ -215,7 +231,14 @@ hr {
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    color: #c78c06;
+}
+
+#searchButton:hover {
+    color: #222;
+    background-color: #c78c06;
+    cursor: pointer;
 }
 
 .header form {
@@ -250,8 +273,9 @@ hr {
 
 .transButton {
     display: flex;
-    background-color: #22222280;
-    color: #fff;
+    background-color: #000000aa;
+    color: white;
+
     padding: 30px;
     margin: 0;
     border: 1px solid #c78c06
@@ -313,6 +337,10 @@ hr {
 
 .visi h3 {
     margin-left: 0
+}
+
+.visi h3 {
+    font-weight: 700;
 }
 
 .ceo, .cfo {
@@ -402,20 +430,21 @@ iframe {
     }
 
     .navButton {
-        padding: 15px 30px;
+        padding: 15px 0;
         color: #c78c06;
         flex-shrink: 0
     }
 
-    .navButton:hover {
-        padding: 15px 30px;
+    a .navButton:hover {
         color: #222;
         background-color: #c78c06
     }
 
     #current {
         color: #222;
-        background-color: #c78c06
+        background-color: #c78c06;
+        padding: 15px 0px;
+
     }
 
     .logo {
@@ -425,7 +454,13 @@ iframe {
     }
 
     #search {
-        width: 250px
+        width: 250px;
+        padding: 5px;
+    }
+
+    #searchButton {
+        height: 40px;
+        width: 40px;
     }
 
     .welcome {
