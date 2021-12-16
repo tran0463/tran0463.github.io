@@ -24,7 +24,7 @@ table {
     border-spacing: 0
 }
 
-button {
+.header a {
     background-color: transparent;
     border: none;
     margin: 0;
