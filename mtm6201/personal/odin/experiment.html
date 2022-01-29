@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experiments</title>
+</head>
+
+<body>
+    <p>Open Console</p>
+
+    <script>
+
+        // Fundamentals 1:
+        // experiment, operand + for adding numbers, then concatenating, then adding again
+        // expected result: the second time adding will actually concatenate numbers
+        console.log(1 + 2 + "3" + 4 + 5);
+        // result is 3345 as opposed to 339
+        let a = 1,
+            b = 2,
+            c = 3;
+        if (a == "1")
+            console.log("case 1");
+        if (a === "1")
+            console.log("case 2");
+        if (a + b == c)
+            console.log("case 3");
+        if (a + b === c)
+            console.log("case 4");
+        if (a + b === "3")
+            console.log("case 5");
+        console.log("break")
+        
+
+//  *************************************************************************
+
+
+        // Fundamentals 2:
+        // Test the use of strict and non-strict conditionals:
+        
+        // or statement comparison
+        let x = null;
+        
+        if (x === "wtf" || "asd") {
+            console.log("first") //any x value works, no matter what datatype
+            //even if x is null... if statement always executes here
+        }
+        if (x === 5 || x === 7 || x === 10 || x === 20) {
+            console.log("second") //this is the way to execute the if statement properly
+        }
+    </script>
+</body>
+
+</html>

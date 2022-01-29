@@ -1,0 +1,185 @@
+html {
+    background-color: #aad4cf;
+}
+
+body {
+    background-color: #d4e9e7;
+    width: 70%;
+    margin: auto;
+    min-width: 1000px;
+    overflow-x: hidden;
+}
+
+
+/* Header and Nav bar */
+header img{
+    display: block;
+    width: 100%;
+    height:350px;
+}
+
+.center {
+    display: block;
+    float: left;
+    width: 100%;
+    position: absolute;
+    left: 1%;
+    height: 0;
+    top: 10%;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 60pt;
+    font-weight: lighter;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    height: 4em;
+ z-index: 100;
+padding-top: .01px;     
+background-color: #d4e9e7cc;
+}
+
+.nav ul {
+    display: block;
+    list-style: none;
+}
+
+.nav ul li {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 33%;
+    list-style-type: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 24pt;
+    color: #444;
+}
+
+
+/***********/
+/* Content */
+/***********/
+
+article {
+    margin: 15px;
+    margin-top: 40px;
+    font-family: sans-serif;
+}
+
+article ul li {
+    line-height: 1em;
+}
+
+h2 {
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+
+h3 {
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+h4 {
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 1.6em;
+}
+
+.art-img {
+    width: 280px;
+    display: block;
+    float: left;
+    margin: 0 30px 15px 0;
+}
+
+/****************/
+/* Contact page */
+/****************/
+
+.contact h3 {
+    margin-bottom: 10px;
+}
+
+article p {
+    display: block;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.contactform {
+    border: 1px solid black;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+input {
+    margin: 10px 0 20px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+form p {
+    display: block;
+    float: left;
+    margin: 0px 10px 0px 5px;
+}
+
+.radio {
+    display: block;
+    float: left;
+    width: 15px;
+    position: relative;
+    top: -5px;
+}
+
+#msg {
+    height: 10vh;
+}
+
+#send {
+    width: 70px;
+    margin-left: -180px;
+    padding: 10px 0;
+    border: 2px black solid;
+    background-color: transparent;
+}
+
+footer {
+    margin: 15px;
+    padding: 15px;
+    font-family: sans-serif;
+    text-align: right;
+}
+
+/*********/
+/* Extra */
+/*********/
+
+.vll:not(:first-child) {
+    float: left;
+    border: solid black;
+    border-width: 0px 0px 0px 1px;
+    height: 3em;
+    margin-top: -16px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+
+}
+
+#send:hover {
+    cursor: pointer;
+}

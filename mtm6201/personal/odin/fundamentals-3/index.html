@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals 3</title>
+</head>
+<body>
+    <h1><a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/fundamentals-part-3">Odin Project - Fundamentals 3</a></h1>
+    <p>Open console</p>
+
+    <script>
+        let x = 1;
+
+        // 1
+        function add7() {
+            console.log(x+7);
+        }
+        add7();
+
+        // 2
+        function multiply() {=> console.log(x*2)};
+        multiply();
+
+        // 3
+        let word = "asDasdF";
+        function capitalize(word) {
+            let a = word.slice(1).toLowerCase();
+            let firstLetter = word.slice(0,1).toUpperCase();
+            console.log(firstLetter + a);
+        }
+        capitalize(word);
+
+        // 4 
+        function lastLetter(word) {
+            let a = word.slice(-1);
+            console.log(a);
+        }
+        lastLetter(word)
+</script>
+</body>
+</html>
