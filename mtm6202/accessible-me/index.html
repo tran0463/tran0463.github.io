@@ -13,14 +13,14 @@
 </head>
 
 <body>
-<a href="#navigation">Skip to navigation</a>
-<a href="#main-content">Skip to main content</a>
-<a href="#about-section">Skip to about section</a>
+<a href="#navigation" aria-label="Skip to navigation">Skip to navigation</a>
+<a href="#main-content" aria-label="Skip to main content">Skip to main content</a>
+<a href="#about-section" aria-label="Skip to about section">Skip to about section</a>
   <div class="container">
 
-    <header class="site-header">
+    <header class="site-header" role="banner">
       <h1>Jam Box Studios</h1>
-      <nav class="main-nav" id="navigation">
+      <nav class="main-nav" id="navigation" role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -31,12 +31,15 @@
       <img src="https://placekitten.com/1200/900" class="banner">
     </header>
 
-    <main class="main-content" id="main-content">
-      <h2>Welcome to Jam Box</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+    <main class="main-content" id="main-content" role="main">
+      <article role="article">
+        <h2 role="heading">Welcome to Jam Box</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+    </article>
 
-      <div class="owner" id="about-section">
+      <article class="owner" id="about-section" role="article">
+        <!-- https://imdac.github.io/modules/accessibility/schema.html#embedded-items -->
         <h2>Meet the owner</h2>
         <ul>
           <li>Name: John Doe</li>
@@ -51,9 +54,9 @@
           Musicville, Danceistan
           B3T 0L0
         </p>
-      </div>
+      </article>
 
-      <div class="contact-section">
+      <div class="contact-section" role="form">
         <h2>Contact Us</h2>
         <form action="thanks.html">
           <label for="Full Name">Full Name</label>
@@ -69,7 +72,7 @@
       </div>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       &copy; 2021 Jam Box Studios
     </footer>
   </div>
