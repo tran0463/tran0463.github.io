@@ -39,21 +39,22 @@
     </article>
 
       <article class="owner" id="about-section" role="article">
-        <!-- https://imdac.github.io/modules/accessibility/schema.html#embedded-items -->
         <h2>Meet the owner</h2>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
-        <h2>Address</h2>
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
-        </p>
+        <h2 itemscope itemtype="schema.org/PostalAddress">Address</h2>
+        <span itemprop="name">Jambox Studios</span> 
+        <span itemprop="streetAddress">123 Guitar Road,</span> 
+        <span itemprop="addressLocality">Musicville, Danceistan</span>
+        <span itemprop="postalCode">B3T 0L0</span>
+
+        <!-- what should I do here? should I have even bothered adding the span tag (when there is no styling for it)
+             Or should I leave the span tag out? If I do include it, do I put the itemprop attribute on the p tag or the span tag?-->
+
       </article>
 
       <div class="contact-section" role="form">
