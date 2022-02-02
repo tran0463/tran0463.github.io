@@ -14,6 +14,13 @@ h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
+h1 {
+  text-align: center;
+  width: 100%;
+  background-color: bisque;
+  margin: 0;
+  padding: 10px 0;
+}
 .container {
   max-width: 1080px;
   margin: 0 auto;
@@ -21,20 +28,30 @@ h6 {
 }
 
 img {
-  width: 100%;
+  width: 30%;
+  margin: 1%;
+  padding: 5px;
 }
-
+.feature {
+  display: flex;
+  flex-direction: row;
+}
 .main-nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  background-color: bisque;
 }
 
 .main-nav ul li {
   flex: 1;
   text-align: center;
+  padding: 5px 0;
+}
+.main-nav ul li:hover {
+  background-color: #eed3b3;
 }
 
 .main-nav ul li a {
@@ -47,7 +64,7 @@ img {
 form input,
 form textarea {
   display: block;
-  width: 100%;
+  width: calc(100% - 40px);
   margin-bottom: 1rem;
   padding: .5rem 1rem;
 }
@@ -68,4 +85,28 @@ form button {
 
 .site-footer {
   padding: 2rem 0;
+}
+
+.hidden {
+  position: absolute;
+  left: -1000px;
+}
+
+.hidden:nth-child(1):focus {
+  left: 0;
+}
+.hidden:nth-child(2):focus {
+  left: 0;
+}
+.hidden:nth-child(3):focus {
+  left: 0;
+}
+
+form {
+  width: 1038px;
+  border: solid black 1px;
+  padding: 20px;
+}
+
+footer {
 }

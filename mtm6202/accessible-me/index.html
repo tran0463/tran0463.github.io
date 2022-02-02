@@ -14,9 +14,9 @@
 
 <body>
   <!-- need to make hidden -->
-<a href="#navigation" aria-label="Skip to navigation">Skip to navigation</a>
-<a href="#main-content" aria-label="Skip to main content">Skip to main content</a>
-<a href="#about-section" aria-label="Skip to about section">Skip to about section</a>
+<a class="hidden" href="#navigation" aria-label="Skip to navigation">Skip to navigation</a>
+<a class="hidden" href="#main-content" aria-label="Skip to main content">Skip to main content</a>
+<a class="hidden" href="#about-section" aria-label="Skip to about section">Skip to about section</a>
   <div class="container">
 
     <header class="site-header" role="banner">
@@ -29,14 +29,15 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </nav>
-      <img src="https://placekitten.com/1200/900" class="banner">
     </header>
 
     <main class="main-content" id="main-content" role="main">
-      <article role="article">
+      <article role="article" class="feature">
+        <img src="https://placekitten.com/1200/900" class="banner">
+        <div>
         <h2 role="heading">Welcome to Jam Box</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p></div>
     </article>
 
       <article class="owner" id="about-section" role="article">
@@ -52,10 +53,6 @@
         <span itemprop="streetAddress">123 Guitar Road,</span> 
         <span itemprop="addressLocality">Musicville, Danceistan</span>
         <span itemprop="postalCode">B3T 0L0</span>
-
-        <!-- what should I do here? should I have even bothered adding the span tag (when there is no styling for it)
-             Or should I leave the span tag out? If I do include it, do I put the itemprop attribute on the p tag or the span tag?-->
-
       </article>
 
       <div class="contact-section" role="form">
