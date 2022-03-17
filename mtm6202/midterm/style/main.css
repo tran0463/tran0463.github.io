@@ -1,0 +1,373 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Utility */
+.white {
+    color: var(--white);
+}
+.red {
+    color: var(--red);
+}
+.left {
+    text-align: left;
+}
+
+/* Text */
+
+h1, h5 {
+    font-family: 'Blackout Sunrise', Arial, sans-serif;
+}
+h4, h3, h2 {
+    font-family: 'Blackout Midnight', Arial, sans-serif;
+}
+
+h2 {
+    color: var(--red);
+    font-size: 92pt;
+    text-align: center;
+}
+h3 {
+    color: var(--white);
+    font-size: 42pt;
+    text-align: center;
+}
+
+section h3 {
+    color: var(--red);
+    margin: 0 0 40px 0;
+}
+
+h4{
+    color: var(--white);
+    text-align: center;
+    font-size: 24pt;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 36pt;
+    color: var(--red);
+    padding: 20px 0 40px 0;
+}
+
+p {
+    font-family: museo, serif;
+}
+
+
+footer {
+    font-family: museo,serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--white);
+}
+section>p {
+    line-height: 1.5;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+/* Variables */
+
+:root {
+    --white: #efefef;
+    --red: #bf1000;
+    --grey: #555;
+    --lgrey: #787878;
+}
+
+/* Document */
+
+html {
+    background-color: var(--lgrey);
+}
+
+.skip { display: none;}
+.skip:focus {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    color: white;
+    border: solid red 15px;
+}
+
+header {
+    background-color: var(--grey);
+    height: 200px;
+    margin: 0 0 50px 0;
+}
+
+header ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: var(--white);
+    padding: 75px 0 75px 0;
+    margin: auto;
+}
+ul li h3 {
+    font-size: 42pt;
+}
+li:nth-child(3) {
+    position: relative;
+    top: -20px;
+    left: -10px;
+    width: 600px;
+}
+
+.red {
+    color: var(--red);
+    font-family: 'Blackout Sunrise', Arial, sans-serif;
+    display: inline;
+    text-align: center;
+}
+
+.underline {
+    border-bottom: var(--red) solid 5px;
+}
+
+.gRooms {
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.room:nth-child(1) {
+    grid-column: 1/4;
+}
+.room:nth-child(2) {
+    grid-column: 4/7;
+}
+.room:nth-child(3) {
+    grid-column: 7/10;
+}
+.room:nth-child(4) {
+    grid-column: 10/13;
+}
+
+.roomText {
+    text-align: center;
+    font-size: 36pt;
+    position: relative;
+    top: -240px
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+}
+
+button {
+    padding: 15px;
+    font-family: 'Blackout Sunrise', Arial, sans-serif;
+    color: var(--red);
+    border: none;
+    font-size: 36pt;
+    align-self: center;
+}
+
+.dot {
+    display: block;
+    width: 100%;
+    border: dashed 2px var(--grey);
+    margin: 40px 0 40px 0;
+}
+
+.gReview {
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.Review:nth-child(1) {
+    grid-column: 1/4;
+    background-color: var(--white);
+    padding: 30px;
+
+}
+.Review:nth-child(2) {
+    grid-column: 4/7;
+    background-color: var(--white);
+    padding: 30px;
+
+}
+.Review:nth-child(3) {
+    grid-column: 7/10;
+    background-color: var(--white);
+    padding: 30px;
+
+}
+.Review:nth-child(4) {
+    grid-column: 10/13;
+    background-color: var(--white);
+    padding: 30px;
+}
+
+.gFooter {
+    margin-top: 50px;
+    /* padding: 50px ; */
+    background-color: var(--grey);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: repeat(4, 100px);
+    justify-content: center;
+    height: 200px;
+}
+.gFooter div {
+    text-align: center;
+    margin: auto;
+}
+.gFooter div a {
+    font-family: museo, serif;
+    font-size: 26pt;
+}
+
+.gFooter div:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+}
+.gFooter div:nth-child(2) {
+    grid-row: 2;
+    grid-column: 1;
+}
+.gFooter div:nth-child(3) {
+    grid-row: 1;
+    grid-column: 2;
+}
+.gFooter div:nth-child(4) {
+    grid-row: 2;
+    grid-column: 2;
+}
+.gFooter div:nth-child(5) {
+    grid-row: 1;
+    grid-column: 3;
+}
+.gFooter div:nth-child(6) {
+    grid-row: 2;
+    grid-column: 3;
+}
+.gFooter div:nth-child(7) {
+    grid-row: 1;
+    grid-column: 4;
+}
+.gFooter div:nth-child(8) {
+    grid-row: 2;
+    grid-column: 4;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+.gTeam {
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: repeat(4, 400px);
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    row-gap: 80px;
+    column-gap: 20px;
+}
+
+.person img {
+    height: 400px;
+    width: 400px;
+}
+.person:nth-child(1) {
+    grid-row: 1; 
+    grid-column: 1;
+ }
+ .person:nth-child(2) {
+    grid-row: 1; 
+    grid-column: 2;
+ }
+ .person:nth-child(3) {
+    grid-row: 1; 
+    grid-column: 3;
+ }
+ .person:nth-child(4) {
+    grid-row: 1; 
+    grid-column: 4;
+ }
+ .person:nth-child(5) {
+    grid-row: 2; 
+    grid-column: 1;
+ }
+ .person:nth-child(6) {
+    grid-row: 2; 
+    grid-column: 2;
+ }
+ .person:nth-child(7) {
+    grid-row: 2; 
+    grid-column: 3;
+ }
+ .person:nth-child(8) {
+    grid-row: 2; 
+    grid-column: 4;
+ }
+
+ .small{
+    font-size: 18pt;
+    position: relative;
+    top: -25px;
+    font-family: 'Blackout Midnight';
+ }
