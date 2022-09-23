@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh Tran - Portfolio</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xor3zrh.css">
+</head>
+<body>
+ 
+    <header>
+        <a href="#name" class="skip">
+            skip to main content
+        </a>
+        <ul>
+            <li><a href="index.html"><h1>mt</h1></a></li>
+            <li><a href="https://www.instagram.com/minht.pics"><h2 class="ul">My Photography</h2></a></li>
+            <li><a href="about.html"><h2 class="ul">About Me</h2></a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="name" id="name">Minh Tran</h2>
+            <h2>Design Work</h2>
+            <p>This is what I've worked on for design</p>
+                <article>
+                    <h3>Papa Frank's Bakery</h3>
+                    <div class="content">
+                        <p>Hospitality - Bakery
+                        <br>Branding
+                        <br>Responsive Design
+                        </p>
+                        <img srcset="images/papa.png,
+                                     images/papa-1-2x.png 2x,
+                                     images/papa-2-3x.png 3x" 
+                                     src="images/papa.png" alt="Papa Frank's fake brand mockups">
+                    </div>
+                </article>
+                <article>
+                    <h3>Kaged Muscle App Redesign</h3>
+                    <div class="content">
+                        <p>Fitness - App
+                        <br>Usability 
+                        <br>Navigation
+                        <br>Modern Update
+                        </p>
+                        <img class="km" srcset="images/km.png,
+                                                images/km-1@2x.png 2x,
+                                                images/km-2@3x.png 3x" 
+                                                src="images/km.png" 
+                                                alt="Superimposed image of Kaged Muscle app redesign">
+                    </div>
+                </article>
+        </section>
+
+        <section>
+            <h2>HTML and CSS</h2>
+            <p>This is what I've worked on for HTML and CSS</p>
+            <article>
+                <h3>MTM6201 - Midterm</h3>
+                <p>The goal of this midterm was to write HTML with CSS to mimic a given screenshot as closely as possible. <br>
+                Note that we had not learned Flex or Grid yet.
+                </p>
+                <img class="example" src="images/example.png" alt="Example screenshot of website to be replicated for midterm"> <br>
+                <a class="link" href="https://tran0463.github.io/midterm/">My Work</a>
+
+                <h3>MTM6201 - Final</h3>
+                <p>The goal of this final was to write HTML with CSS to mimic a given screenshot as closely as possible. <br>
+                Note that we must use Flex and Grid yet. The final had a mobile and desktop version.
+                </p>
+
+                <button type="button" class="collapsible">Given Mockups</button>
+                <div class="collapsibleContent">
+
+                    <img class="example" srcset="images/example-final-mobile.jpg,
+                                                 images/example-final-mobile-11 .75x,
+                                                 images/example-final-mobile-11 .5x"
+                                                 src="images/example-final-mobile.jpg" alt="Example screenshot of mobile website to be replicated for final"> <br>
+                    <img class="example" srcset="images/example-final.jpg,
+                                                 images/example-final-11 .75x,
+                                                 images/example-final-11 .5x" src="images/example-final.jpg" alt="Example screenshot of desktop website to be replicated for final"> <br>                
+                </div> <br>
+                 <a class="link" href="https://tran0463.github.io/mtm6201-final/">My Work</a>
+                
+        </article>
+    </section>
+
+</main>
+
+    <footer>
+        <div class="footerContainer">
+            <a href="https://www.github.com/tran0463"><img src="images/github.png" alt="Github logo button to Minh's profile"></a>
+            <a href="https://www.linkedin.com/in/minht-mmi/"><img src="images/linkedin.png" alt="linkedin logo button to Minh's profile"></a>
+            <a href="https://www.instagram.com/minht.pics"><img src="images/instagram.png" alt="instagram logo button to Minh's photography"></a>
+        </div>
+    </footer>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 
+</script>
+
+</body>
+</html>
+

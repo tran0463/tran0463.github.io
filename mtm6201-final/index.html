@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Star Media</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://kit.fontawesome.com/495bdc9eef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="home">
+        <div class="header">
+            <img class="logo" src="img/logo.png" alt="Three Star Media logo png">
+            <a class="navButton" id="current" href="#home">Home</a>
+            <a class="navButton" href="#about"> About Us </a>
+            <a class="navButton" href="#services"> Services </a>
+            <a class="navButton" href="#team"> Team </a>
+            <a class="navButton" href="#contact"> Contact </a>
+
+            <form id="searchbar" action="GET">
+                <input type="text" name="search" id="search" value="Search">
+                <button type="submit" id="searchButton" onclick="return error();">
+                    <i class="fa fa-search"></i></button>
+                <!-- fa is font awesome icon -->
+            </form>
+        </div>
+        <main>
+            <div class="intro">
+                <div class="welcome">
+                    <!-- put background image on class -->
+                    <div class="container1">
+                        <!-- faded black background -->
+                        <h1>Welcome to Three Star Media</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cum
+                            in veritatis quia nobis quo omnis rem fuga commodi perferendis,
+                            libero illo, sint earum alias dolorum eum laboriosam temporibus
+                            iure aspernatur! Pariatur possimus voluptatem eius harum? Eligendi
+                            exercitationem eveniet quas?
+                        </p>
+
+                        <button class="orangeButton" onclick="return error();">
+                            Connect with us <i class="triangle">&#9654;</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about" id="about">
+                <div class="max">
+                    <div class="aboutImg"></div>
+                    <div class="content">
+                        <h2>About Us</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+                            totam quod? Fuga ipsam est vero consequatur velit ad animi ullam
+                            enim dolore explicabo, aperiam nulla dolorem quos impedit expedita
+                            aliquid esse? Tenetur quia reiciendis maiores praesentium atque ex
+                            molestias eligendi!
+                        </p>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+                            mollitia cumque quo, explicabo vel quidem laudantium assumenda
+                            quisquam aliquid nihil, dolore rerum iste enim sequi voluptatem
+                            possimus eligendi, nisi quae.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <h2>Our Services</h2>
+                <!-- because I don't want to align the header in the grid, and keep it simple -->
+
+                <div class="serviceGrid" id="services">
+                    <!-- display as grid -->
+
+                    <div class="card">
+                        <!-- each card item will be displayed as flex -->
+                        <div class="digiImg cardImg"></div>
+                        <!-- insert background-img -->
+                        <div>
+                            <article>
+                                <h3>Digital Transformation</h3>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                                    repellendus asperiores exercitationem repudiandae veniam
+                                    praesentium nisi ducimus enim illum animi explicabo, quo odit.
+                                    Molestias corrupti minima praesentium eius, blanditiis quasi?
+                                </p>
+
+                                <a class="blackButton" onclick="return error();">
+                                    Digital Plans <i class="triangle">&#9654;</i>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="markImg cardImg"></div>
+                        <div>
+                            <article>
+                                <h3>Marketing</h3>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                                    repellendus asperiores exercitationem repudiandae veniam
+                                    praesentium nisi ducimus enim illum animi explicabo, quo odit.
+                                    Molestias corrupti minima praesentium eius, blanditiis quasi?
+                                </p>
+
+                                <a class="blackButton" onclick="return error();">
+                                    Marketing Plans <i class="triangle">&#9654;</i>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="videImg cardImg"></div>
+                        <div>
+                            <article>
+                                <h3>Video Production</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Necessitatibus quae totam nulla, culpa similique odit fugiat
+                                    beatae ipsam nemo ad error eum corporis voluptatum asperiores.
+                                    Laborum facere possimus error vel?
+                                </p>
+                                <a class="blackButton" onclick="return error();">
+                                    Video Plans <i class="triangle">&#9654;</i>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="webdImg cardImg"></div>
+                        <div>
+                            <article>
+                                <h3>Web Development</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Necessitatibus quae totam nulla, culpa similique odit fugiat
+                                    beatae ipsam nemo ad error eum corporis voluptatum asperiores.
+                                    Laborum facere possimus error vel?
+                                </p>
+                                <a class="blackButton" onclick="return error();">
+                                    Web Plans <i class="triangle">&#9654;</i>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="prinImg cardImg"></div>
+                        <div>
+                            <article>
+                                <h3>Print</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Necessitatibus quae totam nulla, culpa similique odit fugiat
+                                    beatae ipsam nemo ad error eum corporis voluptatum asperiores.
+                                    Laborum facere possimus error vel?
+                                </p>
+                                <a class="blackButton" onclick="return error();">
+                                    Print Plans <i class="triangle">&#9654;</i>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visi">
+                    <article>
+                        <h3 class="inv">Our Vision</h3>
+                        <!-- inv will be a utility class, color=white -->
+                        <p class="inv">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+                            adipisci, itaque vitae consequatur cumque pariatur quam quo? Labore
+                            optio sequi quod reprehenderit porro nesciunt nisi recusandae. Omnis
+                            labore doloribus ab! Labore
+                            optio sequi quod reprehenderit porro nesciunt nisi recusandae. Omnis
+                            labore doloribus ab!
+                        </p>
+                        <button class="transButton" onclick="return error();">
+                            Learn More <i class="triangle">&#9654;</i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <section id="team">
+
+                <h3>Our Team</h3>
+                <div class="teamGrid">
+                    <div class="teamCard">
+                        <img src="img/john.jpg" alt="CEO of Three Star Media" class="ceo">
+                        <div>
+                            <h3>John Doe</h3>
+                            <p><strong>CEO and Co-owner</strong></p>
+                            <hr>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Veritatis ad nostrum repellat, excepturi harum omnis inventore
+                                sunt debitis explicabo provident commodi, ipsa maxime assumenda
+                                illum vero tempora hic dicta? Error.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="teamCard">
+                        <img src="img/bob.jpg" alt="CFO of Three Star Media" class="cfo">
+                        <div>
+                            <h3>Bob Rite</h3>
+                            <p><strong>CFO and Co-owner</strong></p>
+                            <hr>
+                            <!-- hr to be styled -->
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Veritatis ad nostrum repellat, excepturi harum omnis inventore
+                                sunt debitis explicabo provident commodi, ipsa maxime assumenda
+                                illum vero tempora hic dicta? Error.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <article class="contact">
+                <h2>Contact Us</h2>
+                <div class="contactGrid" id="contact">
+                    <div class="form">
+                        <h3>Send us a message</h3>
+                        <form action="contactForm">
+                            <label for="name">Full Name</label> <br>
+                            <input type="text" id="name" name="name"> <br>
+                            <label for="email">Email</label> <br>
+                            <input type="text" id="email" name="email"> <br>
+                            <label for="message">Message</label> <br>
+                            <textarea id="message" name="message"></textarea><br>
+                            <input type="button" value="Send" id="sendButton" onclick="return error();">
+                        </form>
+                    </div>
+                    <!-- display both side by side using grid -->
+                    <div class="setting">
+                        <h2>Hours of operation</h2>
+                        <div class="hours">
+                            <table>
+                                <tr>
+                                    <!-- text-align center -->
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                                <tr>
+                                    <!-- text-align left  -->
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <h3>Location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778950128877!2d-75.7549368!3d45.3499278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1638171273705!5m2!1sen!2sca" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+        <footer>
+            <p>
+                &copy; Copyright Three Star Media, 2020
+                <br>
+                All images are taken from
+                <em>Unsplash</em>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function error() {
+            alert("No function yet!");
+        }
+    </script>
+</body>
+
+</html>
